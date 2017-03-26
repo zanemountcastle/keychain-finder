@@ -1,0 +1,40 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;     /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;  /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;       /* prevent copy paste, to allow, change 'none' to 'text' */
+    -webkit-appearance: none;
+
+    font-family: "Helvetica Neue";
+    color: #2a2a2a;
+    background-color: #f0f0ff;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
+
+.scanning-page,
+.getting-hotter,
+.getting-colder {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 800px;
+    width: 700px;
+}
+
+.getting-hotter {
+  background-color: #ffcccc;
+}
+
+.getting-colder {
+  background-color: #ccccff;
+}
